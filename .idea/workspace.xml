@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="home page">
+    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="recipe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <workItem from="1770824768380" duration="2436000" />
       <workItem from="1770919991044" duration="7661000" />
       <workItem from="1771418713974" duration="8488000" />
-      <workItem from="1771463683224" duration="1657000" />
+      <workItem from="1771463683224" duration="5247000" />
     </task>
     <task id="LOCAL-00001" summary="First Commitment">
       <option name="closed" value="true" />
@@ -194,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771462421032</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="recipe">
+      <option name="closed" value="true" />
+      <created>1771518584524</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1771518584524</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +213,7 @@
     <MESSAGE value="First Commitment" />
     <MESSAGE value="Images online update" />
     <MESSAGE value="home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="home page" />
+    <MESSAGE value="recipe" />
+    <option name="LAST_COMMIT_MESSAGE" value="recipe" />
   </component>
 </project>
