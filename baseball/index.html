@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baseball Page</title>
+
+  <style>
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      gap: 5px;
+      background-color: white;
+      padding: 5px;
+    }
+
+    .container div {
+      padding: 15px;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+      background-color: lightcoral;
+    }
+
+    .menu {
+      grid-area: menu;
+      background-color: lightblue;
+
+    }
+
+    .content {
+      grid-area: content;
+      background-color: lightsteelblue;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+      border-style: dashed;
+      Background-color:cornflowerblue;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<div class="container">
+
+  <div class="header">
+    <h2>All About Baseball</h2>
+  </div>
+
+  <div class="menu">
+    <h3>Baseball Facts</h3>
+
+    <ul>
+      <li>30 teams in Major League Baseball</li>
+      <li>9 players on the field per team</li>
+      <li>Games are 9 innings</li>
+      <li>Played on a diamond-shaped field</li>
+      <li>Very popular in the United States, Japan, and Latin America</li>
+    </ul>
+
+  </div>
+
+  <div class="content">
+
+    <h3>How Baseball Works</h3>
+
+    <ol>
+      <li>The pitcher throws the ball toward home plate.</li>
+      <li>The batter tries to hit the ball.</li>
+      <li>If the batter hits it, they run to first base.</li>
+      <li>Players try to advance around all four bases.</li>
+      <li>If they reach home plate, their team scores a run.</li>
+    </ol>
+
+    <h3>Things I Like About Baseball</h3>
+
+    <ul>
+      <li>Aaron Judge</li>
+      <li>Catching fly-balls</li>
+      <li>Close games in the 9th inning</li>
+      <li>Going to Yankee Stadium</li>
+      <li>Catching a barrel</li>
+    </ul>
+
+  </div>
+
+  <div class="footer">
+
+    <h4>YANKEES ARE THE BEST TEAM</h4>
+    <br>
+    <a href="../index.html">Back to the homepage</a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alto Saxophone Page</title>
+
+  <style>
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      gap: 5px;
+      background-color: white;
+      padding: 5px;
+    }
+
+    .container div {
+      padding: 15px;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+      background-color: lightcoral;
+    }
+
+    .menu {
+      grid-area: menu;
+      background-color: lightblue;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: lightsteelblue;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+      border-style: dashed;
+      background-color: cornflowerblue;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h2>All About the Alto Saxophone</h2>
+  </div>
+
+  <div class="menu">
+    <h3>Alto Sax Facts</h3>
+
+    <ul>
+      <li>Invented by Adolphe Sax in the 1840s</li>
+      <li>Common in jazz, classical, and concert band</li>
+      <li>Tuned in E-flat</li>
+      <li>Usually made of brass</li>
+      <li>One of the most popular beginner saxophones</li>
+    </ul>
+
+  </div>
+
+  <div class="content">
+
+    <h3>How the Alto Saxophone Works</h3>
+
+    <ol>
+      <li>The player blows air into the mouthpiece.</li>
+      <li>The reed vibrates against the mouthpiece.</li>
+      <li>The vibration travels through the saxophone.</li>
+      <li>Pressing keys opens and closes tone holes.</li>
+      <li>This changes the pitch of the sound.</li>
+    </ol>
+
+    <h3>Famous Alto Sax Players</h3>
+
+    <ul>
+      <li>Charlie Parker</li>
+      <li>Cannonball Adderley</li>
+      <li>Paul Desmond</li>
+      <li>Phil Woods</li>
+      <li>Kenny Garrett</li>
+    </ul>
+
+  </div>
+
+  <div class="footer">
+
+    <a href="https://en.wikipedia.org/wiki/Cannonball_Adderley">Cannonball Adderly is my favorite Alto Saxophonist</a>
+    <br>
+    <a href="../index.html">Back to the homepage</a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
