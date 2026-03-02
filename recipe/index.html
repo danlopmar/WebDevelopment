@@ -23,7 +23,7 @@
 
       <li>Mix 1 sliced red onion with 2 tbsp vinegar, 1 tbsp oil, and 1/4 tsp salt; let sit 5–10 minutes.</li>
 
-      <li>Heat 2 tbsp oil; fry 6 <span class="location">salami slices</span> until browned.
+      <li>Heat 2 tbsp oil; fry 6 <span class="location" style="color: blue">salami</span> slices until browned.
         <ol>
           <div class="photo-op">
           <li><img src="salami.jpeg" width="250" alt="salami"></li>
@@ -53,6 +53,15 @@
 .photo-op {
   display: none;
   margin-top: 10px;
+}
+
+.location:hover + .photo-op{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 3s;
+
 }
 
 
