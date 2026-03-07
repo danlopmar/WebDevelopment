@@ -21,7 +21,7 @@
   <ol type="a">
     <li> <a href="saxophone/index.html" style="font-size: 20px">Read more about the saxophone here </a></li>
   </ol>
-  <li style="color: orange">My favorite color is orange</li>
+  <li>My favorite color is orange</li>
 </ol>
 
 
@@ -32,22 +32,21 @@
 
 <style>
 
-  ol {
-    color: orange;
-    font-size: 20px;
-  }
-  h2 {
-    text-align: center;
-    color: blue;
-    font-size: 20px;
-    font-family: "Comic Sans MS";
-  }
-  a {
-    text-align: center;
-      color: #09bfff;
-    font-size: 40px;
 
 
+
+
+
+  body {
+    animation: colorChange 5s infinite;
+  }
+
+  @keyframes colorChange {
+    0%   { color: red; }
+    25%  { color: orange; }
+    50%  { color: blue; }
+    75%  { color: green; }
+    100% { color: red; }
   }
 
 </style>
