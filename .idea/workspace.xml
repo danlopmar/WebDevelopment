@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="cursor ting">
-      <change afterPath="$PROJECT_DIR$/bootstrap/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripting/index.html" afterDir="false" />
+    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="java">
+      <change afterPath="$PROJECT_DIR$/madlib/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseball/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/baseball/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,8 @@
       <workItem from="1772631416474" duration="1201000" />
       <workItem from="1772726330526" duration="1487000" />
       <workItem from="1772727918901" duration="1000" />
-      <workItem from="1772820778243" duration="4754000" />
+      <workItem from="1772820778243" duration="4897000" />
+      <workItem from="1773147967883" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="First Commitment">
       <option name="closed" value="true" />
@@ -278,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772631504233</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="java">
+      <option name="closed" value="true" />
+      <created>1772847508555</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1772847508555</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +298,19 @@
     <MESSAGE value="updating homepage using style" />
     <MESSAGE value="the grids" />
     <MESSAGE value="cursor ting" />
-    <option name="LAST_COMMIT_MESSAGE" value="cursor ting" />
+    <MESSAGE value="java" />
+    <option name="LAST_COMMIT_MESSAGE" value="java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/madlib/index.html</url>
+          <line>45</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

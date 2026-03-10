@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLibs</title>
+</head>
+<body>
+<h1>MadLibs</h1>
+<div id="entry">
+    <h2>My test page</h2>
+
+    <p>Place: <input type="text" id="place_input"></p>
+    <p>Adjective (jersey): <input type="text" id="jersey_input"></p>
+    <p>Noun (what was hit): <input type="text" id="hit_input"></p>
+    <p>Place/Area in stadium: <input type="text" id="stadium_input"></p>
+    <p>Plural noun (things thrown): <input type="text" id="throw_input"></p>
+    <p>Adjective (hot dog): <input type="text" id="hotdog_input"></p>
+    <p>Drink: <input type="text" id="drink_input"></p>
+    <p>Emotion: <input type="text" id="emotion_input"></p>
+
+    <button onclick="madlibs()">Submit</button>
+</div>
+
+
+<div id="results">
+    <h2>Results</h2>
+    <p>
+        Yesterday I went to a New York Yankees game at <span id="place_output">___</span>.
+        When I got to my seat, I saw a Yankees fan wearing a <span id="jersey_output">___</span> jersey.
+        In the first inning, the pitcher threw a curveball and the batter hit the <span id="hit_output">___</span> into <span id="stadium_output">___</span>.
+        Everyone around me started to cheering and throwing <span id="throw_output">___</span> into the air.
+        During the seventh inning stretch, I ate a <span id="hotdog_output">___</span> hot dog and drank <span id="drink_output">___</span>.
+        By the end of the game, the Yankees won 5 to 6, and the crowd felt <span id="emotion_output">___</span>.
+    </p>
+</div>
+</body>
+
+<script>
+    function madlibs() {
+
+        let place = document.getElementById("place_input").value;
+        let jersey = document.getElementById("jersey_input").value;
+        let hit = document.getElementById("hit_input").value;
+        let stadium = document.getElementById("stadium_input").value;
+        let throwThing = document.getElementById("throw_input").value;
+        let hotdog = document.getElementById("hotdog_input").value;
+        let drink = document.getElementById("drink_input").value;
+        let emotion = document.getElementById("emotion_input").value;
+
+        document.getElementById("place_output").innerHTML = place;
+        document.getElementById("jersey_output").innerHTML = jersey;
+        document.getElementById("hit_output").innerHTML = hit;
+        document.getElementById("stadium_output").innerHTML = stadium;
+        document.getElementById("throw_output").innerHTML = throwThing;
+        document.getElementById("hotdog_output").innerHTML = hotdog;
+        document.getElementById("drink_output").innerHTML = drink;
+        document.getElementById("emotion_output").innerHTML = emotion;
+
+    }
+</script>
+</html>
