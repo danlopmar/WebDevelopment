@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>MadLibs</title>
+
+    <style>
+        #results {
+            display: none;
+        }
+    </style>
+
 </head>
+
 <body>
+
 <h1>MadLibs</h1>
+
 <div id="entry">
     <h2>My test page</h2>
 
@@ -19,6 +29,7 @@
     <p>Emotion: <input type="text" id="emotion_input"></p>
 
     <button onclick="madlibs()">Submit</button>
+
 </div>
 
 
@@ -28,14 +39,15 @@
         Yesterday I went to a New York Yankees game at <span id="place_output">___</span>.
         When I got to my seat, I saw a Yankees fan wearing a <span id="jersey_output">___</span> jersey.
         In the first inning, the pitcher threw a curveball and the batter hit the <span id="hit_output">___</span> into <span id="stadium_output">___</span>.
-        Everyone around me started to cheering and throwing <span id="throw_output">___</span> into the air.
+        Everyone around me started cheering and throwing <span id="throw_output">___</span> into the air.
         During the seventh inning stretch, I ate a <span id="hotdog_output">___</span> hot dog and drank <span id="drink_output">___</span>.
         By the end of the game, the Yankees won 5 to 6, and the crowd felt <span id="emotion_output">___</span>.
     </p>
 </div>
-</body>
+
 
 <script>
+
     function madlibs() {
 
         let place = document.getElementById("place_input").value;
@@ -56,6 +68,11 @@
         document.getElementById("drink_output").innerHTML = drink;
         document.getElementById("emotion_output").innerHTML = emotion;
 
+        document.getElementById("results").style.display = "block";
+
     }
+
 </script>
+
+</body>
 </html>
