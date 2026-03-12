@@ -59,6 +59,15 @@
         let drink = document.getElementById("drink_input").value;
         let emotion = document.getElementById("emotion_input").value;
 
+
+
+        if(place == "" || jersey == "" || hit == "" || stadium == "" ||
+            throwThing == "" || hotdog == "" || drink == "" || emotion == "") {
+
+
+            return;
+        }
+
         document.getElementById("place_output").innerHTML = place;
         document.getElementById("jersey_output").innerHTML = jersey;
         document.getElementById("hit_output").innerHTML = hit;
@@ -69,7 +78,7 @@
         document.getElementById("emotion_output").innerHTML = emotion;
 
         document.getElementById("results").style.display = "block";
-
+        document.getElementById("entry").style.display = "none";
     }
 
 </script>
