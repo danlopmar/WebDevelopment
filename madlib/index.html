@@ -59,12 +59,10 @@
         let drink = document.getElementById("drink_input").value;
         let emotion = document.getElementById("emotion_input").value;
 
-
-
         if(place == "" || jersey == "" || hit == "" || stadium == "" ||
             throwThing == "" || hotdog == "" || drink == "" || emotion == "") {
 
-
+            document.getElementById("results").style.display = "none";
             return;
         }
 
@@ -78,10 +76,12 @@
         document.getElementById("emotion_output").innerHTML = emotion;
 
         document.getElementById("results").style.display = "block";
-        document.getElementById("entry").style.display = "none";
+
     }
 
 </script>
+
+
 
 </body>
 </html>
