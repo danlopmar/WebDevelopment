@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="checklist">
+    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="date">
+      <change afterPath="$PROJECT_DIR$/caesar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/date/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/date/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo/index.html" afterDir="false" />
     </list>
@@ -49,32 +52,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.ai.html.executor": "Run",
-    "JavaScript Debug.hell.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.new.html.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/dalopez-martinez/Library/Application Support/JetBrains/WebStorm2025.3/node/versions/24.13.1/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.ai.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.hell.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index2.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.new.html.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dalopez-martinez/WebstormProjects/WebDevelopment /date&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/dalopez-martinez/Library/Application Support/JetBrains/WebStorm2025.3/node/versions/24.13.1/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/date" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/recipe" />
       <recent name="$PROJECT_DIR$" />
@@ -116,6 +124,13 @@
       <workItem from="1773869362383" duration="1472000" />
       <workItem from="1775408138308" duration="17479000" />
       <workItem from="1776100306403" duration="3925000" />
+      <workItem from="1776258054745" duration="10233000" />
+      <workItem from="1776686054435" duration="196000" />
+      <workItem from="1776782504752" duration="3111000" />
+      <workItem from="1776877918344" duration="5571000" />
+      <workItem from="1777001087726" duration="1731000" />
+      <workItem from="1777465066371" duration="14732000" />
+      <workItem from="1777950205951" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="First Commitment">
       <option name="closed" value="true" />
@@ -333,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773883195268</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="checklist">
+      <option name="closed" value="true" />
+      <created>1776258093737</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1776258093737</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +373,7 @@
     <MESSAGE value="java" />
     <MESSAGE value="madlibs" />
     <MESSAGE value="checklist" />
-    <option name="LAST_COMMIT_MESSAGE" value="checklist" />
+    <MESSAGE value="date" />
+    <option name="LAST_COMMIT_MESSAGE" value="date" />
   </component>
 </project>

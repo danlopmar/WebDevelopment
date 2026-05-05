@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Countdown</title>
+</head>
+<body>
+
+<p>Date Countdown</p>
+
+<label>Pick a Date:</label>
+<input type="date" id="day" name="picked">
+
+<p id="result"></p>
+
+</body>
+
+<script>
+
+    setInterval(count, 1000);
+
+    function count() {
+        let now = new Date();
+
+        let input = document.getElementById("day").value;
+
+        if (input == "") {
+            document.getElementById("result").innerHTML = "Please pick a date.";
+            return;
+        }
+
+        let targetDate = new Date(input);
+
+        let difference = targetDate.getTime() - now.getTime();
+
+        let totalSeconds = Math.floor(Math.abs(difference) / 1000);
+
+        let days = Math.floor(totalSeconds / (60 * 60 * 24));
+        let hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+        let minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+        let seconds = totalSeconds % 60;
+
+        let message = "";
+
+        if (difference > 0) {
+            message = "There are " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds until your date.";
+        } else {
+            message = "That date has already passed.";
+        }
+
+        document.getElementById("result").innerHTML = message;
+    }
+
+</script>
+
+</html>

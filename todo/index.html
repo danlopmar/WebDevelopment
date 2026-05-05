@@ -15,20 +15,27 @@
         }
 
         .task {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .trash {
             margin-left: 10px;
             cursor: pointer;
         }
+
+        .date {
+            margin-left: 10px;
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
 
-<input type="text" id="taskInput">
+<input type="text" id="taskInput" placeholder="Enter task">
+<input type="date" id="dueDate">
 <button onclick="addTask()">Add</button>
+
 <br><br>
 
 <div id="list"></div>
@@ -37,41 +44,44 @@
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        let expires = "expires="+d.toUTCString();
+        let expires = "expires=" + d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
 
     function getCookie(cname) {
         let name = cname + "=";
-        let ca = document.cookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
+        let ca = document.cookie.split(";");
+
+        for (let i = 0; i < ca.length; i++) {
             let c = ca[i].trim();
+
             if (c.indexOf(name) == 0) {
                 return c.substring(name.length, c.length);
             }
         }
+
         return "";
     }
 
-    let count = 1;
-
     function addTask() {
-        let input = document.getElementById("taskInput");
-        let text = input.value;
+        let taskInput = document.getElementById("taskInput");
+        let dueDate = document.getElementById("dueDate");
 
-        if(text == "") return false;
+        let text = taskInput.value;
+        let date = dueDate.value;
 
-        addTaskToPage(text);
+        if (text == "") return;
 
-        // store multiple tasks
+        addTaskToPage(text, date);
+
         let current = getCookie("tasks");
-        setCookie("tasks", current + "|" + text, 15);
+        setCookie("tasks", current + "|" + text + "," + date, 15);
 
-        input.value = "";
-        count++;
+        taskInput.value = "";
+        dueDate.value = "";
     }
 
-    function addTaskToPage(text) {
+    function addTaskToPage(text, date) {
         let list = document.getElementById("list");
 
         let div = document.createElement("div");
@@ -83,55 +93,41 @@
         let label = document.createElement("label");
         label.innerText = " " + text;
 
+        let due = document.createElement("span");
+        due.className = "date";
+        due.innerText = "Due: " + date;
+
         let trash = document.createElement("span");
         trash.innerText = "🗑️";
         trash.className = "trash";
-        trash.onclick = function() {
+
+        trash.onclick = function () {
             div.remove();
         };
 
         div.appendChild(checkbox);
         div.appendChild(label);
+        div.appendChild(due);
         div.appendChild(trash);
 
         list.appendChild(div);
     }
 
     let saved = getCookie("tasks");
-    if(saved != "") {
+
+    if (saved != "") {
         let tasks = saved.split("|");
-        for(let i = 0; i < tasks.length; i++) {
-            if(tasks[i] != "") {
-                addTaskToPage(tasks[i]);
-                count++;
+
+        for (let i = 0; i < tasks.length; i++) {
+            if (tasks[i] != "") {
+                let parts = tasks[i].split(",");
+                let text = parts[0];
+                let date = parts[1];
+
+                addTaskToPage(text, date);
             }
         }
     }
-
-
-    let current_cookie = getCookie("task")
-    console.log(current_cookie);
-    current_cookie = current_cookie.split("|")
-    console.log(current_cookie);
-    //console.log(current_cookie.length);
-    //console.log(current_cookie[1]);
-    //current_cookie[1] = current_cookie[1].toUpperCase();
-    //console.log(current_cookie[1]);
-    //console.log(current_cookie);
-
-
-    for(let i = 0; i <current_cookie.length; i = i +1){
-        console.log(current_cookie[i]);
-    }
-    console.log(current_cookie[0]);
-    console.log(current_cookie[1]);
-    console.log(current_cookie[2]);
-    console.log(current_cookie[3]);
-    console.log(current_cookie[4]);
-    console.log(current_cookie[5]);
-
-
-
 </script>
 
 </body>

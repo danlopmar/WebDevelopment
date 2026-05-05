@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cipher</title>
+</head>
+<body>
+
+<h2>Birthday Cipher</h2>
+
+<p>Birthday: <input type="date" id="bday"></p>
+<p>Message: <input type="text" id="text"></p>
+
+<button onclick="encode()">Encode</button>
+<button onclick="decode()">Decode</button>
+
+<p>Result: <span id="out"></span></p>
+
+<script>
+    function getKey() {
+        let b = document.getElementById("bday").value;
+        let sum = 0;
+
+        for (let i = 0; i < b.length; i++) {
+            if (b[i] != "-") {
+                sum = sum + Number(b[i]);
+            }
+        }
+
+        let key = sum % 26;
+        if (key == 0) {
+            key = 1;
+        }
+
+        return key;
+    }
+
+    function encode() {
+        let key = getKey();
+        let text = document.getElementById("text").value.toUpperCase();
+        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let result = "";
+
+        for (let i = 0; i < text.length; i++) {
+            let index = letters.indexOf(text[i]);
+
+            if (index == -1) {
+                result = result + text[i];
+            } else {
+                let newIndex = (index + key) % 26;
+                result = result + letters[newIndex];
+            }
+        }
+
+        document.getElementById("out").innerText = result;
+    }
+
+    function decode() {
+        let key = getKey();
+        let text = document.getElementById("text").value.toUpperCase();
+        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let result = "";
+
+        for (let i = 0; i < text.length; i++) {
+            let index = letters.indexOf(text[i]);
+
+            if (index == -1) {
+                result = result + text[i];
+            } else {
+                let newIndex = (index - key + 26) % 26;
+                result = result + letters[newIndex];
+            }
+        }
+
+        document.getElementById("out").innerText = result;
+    }
+</script>
+
+</body>
+</html>
