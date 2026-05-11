@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="date">
-      <change afterPath="$PROJECT_DIR$/caesar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/date/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/date/index2.html" afterDir="false" />
+    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="caeasre">
+      <change afterPath="$PROJECT_DIR$/api/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,7 @@
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index2.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.new.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.weather.html.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -84,6 +82,7 @@
       <recent name="$PROJECT_DIR$/date" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/recipe" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/first" />
@@ -130,7 +129,9 @@
       <workItem from="1776877918344" duration="5571000" />
       <workItem from="1777001087726" duration="1731000" />
       <workItem from="1777465066371" duration="14732000" />
-      <workItem from="1777950205951" duration="323000" />
+      <workItem from="1777950205951" duration="1647000" />
+      <workItem from="1778082286957" duration="6801000" />
+      <workItem from="1778510623861" duration="404000" />
     </task>
     <task id="LOCAL-00001" summary="First Commitment">
       <option name="closed" value="true" />
@@ -356,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776258093737</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="caeasre">
+      <option name="closed" value="true" />
+      <created>1777950549839</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1777950549839</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +383,7 @@
     <MESSAGE value="madlibs" />
     <MESSAGE value="checklist" />
     <MESSAGE value="date" />
-    <option name="LAST_COMMIT_MESSAGE" value="date" />
+    <MESSAGE value="caeasre" />
+    <option name="LAST_COMMIT_MESSAGE" value="caeasre" />
   </component>
 </project>

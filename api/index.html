@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baseball API</title>
+</head>
+<body>
+
+<h1>Baseball Player Stats</h1>
+
+<input type="text" id="playerInput" placeholder="Enter player name">
+<button onclick="searchPlayer()">Search</button>
+
+<div id="output"></div>
+
+<script>
+
+    function searchPlayer() {
+
+        let player = document.getElementById("playerInput").value;
+
+        // First API call: find player ID
+        let searchURL =
+            "https://statsapi.mlb.com/api/v1/people/search?names=" +
+            encodeURIComponent(player);
+
+        fetch(searchURL)
+            .then(response => response.json())
+            .then(data => {
+
+                if (data.people.length === 0) {
+                    document.getElementById("output").innerHTML =
+                        "No player found";
+                    return;
+                }
+
+                let playerData = data.people[0];
+                let playerID = playerData.id;
+
+                // Second API call: get stats
+                let statsURL =
+                    "https://statsapi.mlb.com/api/v1/people/" +
+                    playerID +
+                    "/stats?stats=season&group=hitting";
+
+                return fetch(statsURL)
+                    .then(response => response.json())
+                    .then(statsData => {
+
+                        console.log(statsData);
+
+                        let splits =
+                            statsData.stats[0].splits;
+
+                        if (splits.length === 0) {
+                            document.getElementById("output").innerHTML =
+                                "No stats found";
+                            return;
+                        }
+
+                        let stats = splits[0].stat;
+
+                        document.getElementById("output").innerHTML =
+                            "<h2>" + playerData.fullName + "</h2>" +
+                            "<p>Batting Average: " + stats.avg + "</p>" +
+                            "<p>Home Runs: " + stats.homeRuns + "</p>" +
+                            "<p>RBIs: " + stats.rbi + "</p>" +
+                            "<p>Hits: " + stats.hits + "</p>" +
+                            "<p>Runs: " + stats.runs + "</p>";
+
+                    });
+
+            })
+            .catch(error => {
+
+                console.log(error);
+
+                document.getElementById("output").innerHTML =
+                    "Error fetching player data";
+
+            });
+
+    }
+
+</script>
+
+</body>
+</html>
