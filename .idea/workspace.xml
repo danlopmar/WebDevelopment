@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="player" />
+    <list default="true" id="dd5526c7-0281-419f-bd35-3a2ce4411e90" name="Changes" comment="connections">
+      <change afterPath="$PROJECT_DIR$/game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +131,9 @@
       <workItem from="1777465066371" duration="14732000" />
       <workItem from="1777950205951" duration="1647000" />
       <workItem from="1778082286957" duration="6801000" />
-      <workItem from="1778510623861" duration="1148000" />
+      <workItem from="1778510623861" duration="14079000" />
+      <workItem from="1779764206688" duration="6106000" />
+      <workItem from="1780054991100" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="First Commitment">
       <option name="closed" value="true" />
@@ -370,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778511073992</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="player">
+      <option name="closed" value="true" />
+      <created>1778511942157</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1778511942157</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +403,7 @@
     <MESSAGE value="date" />
     <MESSAGE value="caeasre" />
     <MESSAGE value="player" />
-    <option name="LAST_COMMIT_MESSAGE" value="player" />
+    <MESSAGE value="connections" />
+    <option name="LAST_COMMIT_MESSAGE" value="connections" />
   </component>
 </project>

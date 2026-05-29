@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connections</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f2f2f2;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .board {
+            width: 500px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            background: white;
+            border: 2px solid black;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .selected {
+            background: black;
+            color: white;
+        }
+
+        .solved {
+            background: lightgreen;
+            color: black;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Connections</h1>
+<p>Pick 4 connected items.</p>
+
+<div class="board" id="board"></div>
+
+<button onclick="clearBoxes()">Clear</button>
+<button onclick="shuffleBoard()">Shuffle</button>
+<button onclick="checkAnswer()">Submit</button>
+
+<p id="message"></p>
+
+<script>
+
+    let words = [
+
+        "Dr. Weyburn",
+        "Ms. Nunes",
+        "Yves Kabore",
+        "Zoë Hillman",
+
+        "Ms. Cimini",
+        "Mr. Cleveland-Tran",
+        "Mr. Kafogalis",
+        "Ms. Duncan",
+
+        "Joe",
+        "Dante",
+        "Juice",
+        "Water",
+
+        "Ms. Owens",
+        "Ms. Meyer",
+        "Dr. Brandon",
+        "Mr. Riggio"
+
+    ];
+
+    let groups = [
+
+        [
+            "Dr. Weyburn",
+            "Ms. Nunes",
+            "Yves Kabore",
+            "Zoë Hillman"
+        ],
+
+        [
+            "Ms. Cimini",
+            "Mr. Cleveland-Tran",
+            "Mr. Kafogalis",
+            "Ms. Duncan"
+        ],
+
+        [
+            "Joe",
+            "Dante",
+            "Juice",
+            "Water"
+        ],
+
+        [
+            "Ms. Owens",
+            "Ms. Meyer",
+            "Dr. Brandon",
+            "Mr. Riggio"
+        ]
+
+    ];
+
+    let board = document.getElementById("board");
+
+    function shuffleBoard() {
+
+        words.sort(() => Math.random() - 0.5);
+
+        loadBoard();
+
+    }
+
+    function loadBoard() {
+
+        board.innerHTML = "";
+
+        words.forEach(function(word) {
+
+            let box = document.createElement("div");
+
+            box.classList.add("box");
+
+            box.textContent = word;
+
+            box.addEventListener("click", function() {
+
+                if (!box.classList.contains("solved")) {
+                    box.classList.toggle("selected");
+                }
+
+            });
+
+            board.appendChild(box);
+
+        });
+
+    }
+
+    function clearBoxes() {
+
+        let boxes = document.querySelectorAll(".box");
+
+        boxes.forEach(function(box) {
+            box.classList.remove("selected");
+        });
+
+    }
+
+    function checkAnswer() {
+
+        let selected = document.querySelectorAll(".selected");
+
+        if (selected.length != 4) {
+
+            document.getElementById("message").textContent =
+                "Select 4 boxes.";
+
+            return;
+
+        }
+
+        let selectedWords = [];
+
+        selected.forEach(function(box) {
+            selectedWords.push(box.textContent);
+        });
+
+        let correct = false;
+
+        groups.forEach(function(group) {
+
+            let match = group.every(function(word) {
+                return selectedWords.includes(word);
+            });
+
+            if (match) {
+
+                correct = true;
+
+                selected.forEach(function(box) {
+
+                    box.classList.remove("selected");
+                    box.classList.add("solved");
+
+                });
+
+                if (group.includes("Dr. Weyburn")) {
+
+                    document.getElementById("message").textContent =
+                        "Correct! Heads of school divisions";
+
+                }
+
+                else if (group.includes("Ms. Cimini")) {
+
+                    document.getElementById("message").textContent =
+                        "Correct! Packer math teachers";
+
+                }
+
+                else if (group.includes("Joe")) {
+
+                    document.getElementById("message").textContent =
+                        "Correct! Things you can find in a deli";
+
+                }
+
+                else {
+
+                    document.getElementById("message").textContent =
+                        "Correct! Leaving or already left Packer";
+
+                }
+
+            }
+
+        });
+
+        if (!correct) {
+
+            document.getElementById("message").textContent =
+                "Wrong group.";
+
+        }
+
+    }
+
+    // shuffle immediately when page loads
+    shuffleBoard();
+
+</script>
+
+</body>
+</html>
